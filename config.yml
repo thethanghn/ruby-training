@@ -1,0 +1,17 @@
+title: Ruby Training
+tagline: A brand new course on Learning Lab
+description: A Ruby Trainning Course
+template:
+  repo: ruby-training-template
+  name: ruby-training
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
